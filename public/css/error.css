@@ -1,0 +1,51 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+.error-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo svg {
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 28px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #e94560;
+  margin: 20px 0 10px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  margin: 20px 0;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}

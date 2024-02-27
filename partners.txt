@@ -1,0 +1,45 @@
+### To Aqui API ###
+
+## Get all students
+
+curl --location 'https://toakiescola.com.br/api/partner/students/all' \
+--header 'Accept: application/json' \
+--header 'X-PARTNER: nip' \
+--header 'Content-Type: application/json' \
+--header 'X-TOKEN-PARTNER: $2y$10$iZAO4bfIBlG/k2AZXTu.R.k8lxH1nvuHjjt60ysIUsbVkhhG4Cf6e'
+
+## Get the given student
+
+curl --location 'https://toakiescola.com.br/api/partner/students/get/1' \
+--header 'Accept: application/json' \
+--header 'X-PARTNER: nip' \
+--header 'Content-Type: application/json' \
+--header 'X-TOKEN-PARTNER: $2y$10$iZAO4bfIBlG/k2AZXTu.R.k8lxH1nvuHjjt60ysIUsbVkhhG4Cf6e'
+
+## Register a student attendance check in
+
+curl --location 'https://toakiescola.com.br/api/attendance/check/in/biometric' \
+--header 'Accept: application/json' \
+--header 'X-PARTNER: nip' \
+--header 'Content-Type: application/json' \
+--header 'X-TOKEN-PARTNER: $2y$10$iZAO4bfIBlG/k2AZXTu.R.k8lxH1nvuHjjt60ysIUsbVkhhG4Cf6e' \
+--data '{
+    "client_id": 1,
+    "school_id": 1,
+    "student_id": 1,
+    "checked_in_at": "2024-01-24 12:00:00"
+}'
+
+## Register a student attendance check out
+
+curl --location 'https://toakiescola.com.br/api/attendance/check/out/biometric' \
+--header 'Accept: application/json' \
+--header 'X-PARTNER: nip' \
+--header 'Content-Type: application/json' \
+--header 'X-TOKEN-PARTNER: $2y$10$iZAO4bfIBlG/k2AZXTu.R.k8lxH1nvuHjjt60ysIUsbVkhhG4Cf6e' \
+--data '{
+    "client_id": 1,
+    "school_id": 1,
+    "student_id": 1,
+    "checked_out_at": "2024-01-24 12:00:00"
+}'
